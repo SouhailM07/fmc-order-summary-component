@@ -19,30 +19,30 @@ import img from "/illustration-hero.svg";
 export default function MyContainer() {
   return (
     <>
-      <Container
-        className="bg-gray-400 h-screen !flex items-center justify-center"
-        maxWidth="xl"
-      >
-        <Card className="w-[30rem] text-center !rounded-3xl  pb-[1rem]">
-          <CardMedia image={img} component="img" className="h-[15rem]" />
-          <Box className="px-[2rem]">
+      <Container className="" maxWidth="xl" id="Container">
+        <Card className="w-[30rem] text-center !rounded-3xl  pb-[1.5rem]">
+          <CardMedia image={img} component="img" className="h-[14rem]" />
+          <Box className="sm:px-[2rem] px-[1rem]">
             <CardContent>
-              <Typography variant="h4" className="!font-bold !my-[1rem] ">
+              <Typography
+                variant="h4"
+                className="!font-bold !my-[1rem] text-DarkBlue"
+              >
                 Order Summary
               </Typography>
-              <Typography variant="h6">
+              <p className="text-DesaturatedBlue sm:px-[1rem] sm:text-[1.3rem] text-[1.25rem]">
                 You can now listen to millions of songs, audiobooks, and
                 podcasts on any device anywhere you like!
-              </Typography>
+              </p>
               {/*  */}
               <MusicCard />
               {/*  */}
             </CardContent>
-            <CardActions className="flex flex-col items-center space-y-[2rem]">
-              <Button className="!bg-BrightBlue w-full !py-[1rem] !text-white !rounded-xl">
+            <CardActions className="flex flex-col items-center space-y-[1.6rem]">
+              <Button className="!capitalize !bg-BrightBlue w-full !py-[1rem] !text-white !rounded-xl !font-black hover:!bg-violet-500">
                 Proceed to Payment
               </Button>
-              <Button className="!text-DesaturatedBlue !font-bold">
+              <Button className="!capitalize !text-DesaturatedBlue !font-bold hover:!text-black ">
                 Cancel Order
               </Button>
             </CardActions>

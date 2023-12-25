@@ -3,3 +3,9 @@
 @tailwind utilities;
 @layer components {
 }
+
+#Container {
+  @apply !flex items-center justify-center;
+  @apply h-screen;
+  @apply bg-[url('/pattern-background-mobile.svg')] mb:bg-[url('/pattern-background-desktop.svg')] bg-VeryPaleBlue bg-[length:100%_35%] mb:bg-[length:100%_45%] bg-no-repeat bg-top;
+}

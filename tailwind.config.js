@@ -9,6 +9,10 @@
         DesaturatedBlue: "hsl(224, 23%, 55%)",
         DarkBlue: "hsl(223, 47%, 23%)",
       },
+      screens: {
+        sm: "430px",
+        mb: "768px",
+      },
     },
   },
   plugins: [],

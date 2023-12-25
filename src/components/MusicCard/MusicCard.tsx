@@ -7,15 +7,19 @@ import { Card, CardContent, CardMedia, Box, Link } from "@mui/material";
 export default function MusicCard() {
   return (
     <>
-      <Card className="flex items-center justify-between px-6 !bg-VeryPaleBlue mt-[1rem]">
+      <Card className="flex items-center justify-between px-6 py-[0.7rem] !bg-VeryPaleBlue mt-[1rem] !shadow-none">
         <Box className="flex items-center">
           <CardMedia image={logo} component="img" />
           <CardContent className="!py-[1rem]">
-            <p className="font-bold">Annual Plan</p>
-            <p>$59.99/year</p>
+            <p className="font-bold text-DarkBlue">Annual Plan</p>
+            <p className="text-DesaturatedBlue">$59.99/year</p>
           </CardContent>
         </Box>
-        <Link underline="always" href="#" className="!text-BrightBlue">
+        <Link
+          underline="always"
+          href="#"
+          className="!text-BrightBlue !decoration-BrightBlue hover:no-underline cursor-pointer !font-bold"
+        >
           Change
         </Link>
       </Card>
